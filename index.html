@@ -7,6 +7,51 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+    <header>
+        <h1>Create Your Burger</h1>
+    </header>
+
+    <main>
+        <!-- form -->
+        <form action="#">
+
+            <!-- input nome hamburger: solo lettere, required, no label, placeholder -->
+            <input type="text" name="hamburgerName" id="hamburgerName" placeholder="Name Your Hamburger" required>
+            <!-- /input nome hamburger -->
+
+            <h2>Ingredients</h2>
+
+            <!-- gruppo input ingredienti: almeno 2 required-->
+            <div class="ingredients">
+                <div class="ingredient-container">
+                    <img src="#" alt="#">
+                    <span class="ingredient-name">Cheese</span>
+                    <input type="checkbox" class="ingredient-input" name="cheese" id="cheese">
+                    <label for="cheese">add</label>
+                </div>
+            </div>
+            <!-- /gruppo input ingredienti-->
+
+            <!-- discount -->
+            <label for="Coupon">Discount Coupon</label>
+            <input type="text" name="coupon" id="coupon">
+            <!-- /discount -->
+
+            <!-- button: reset valore iniziale ad ogni click, check hamburgerName, check ingredients, check discount -->
+            <input type="submit" id="calculate" value="calculate">
+            <!-- /button -->
+        </form>
+        <!-- /form -->
+
+    </main>
+
+    <footer>
+        <!-- prezzo finale -->
+        <h2>Your Price</h2>
+        <div class="price-container">$ <span id="price"></span></div>
+        <!-- /prezzo finale -->
+    </footer>
     
     <script src="./js/script.js"></script>
 </body>
