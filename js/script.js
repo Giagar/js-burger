@@ -1,14 +1,14 @@
 // variabili generali
 // ?come chiamo queste variabili (come gruppo) nei commenti?
-var couponList = ["abcd", "bcda", "dbca", "dddd"];
+var couponList = ['abcd', 'bcda', 'dbca', 'dddd'];
 var total = 0;
 
 // selezione input
-var burgerName = document.getElementById("hamburgerName");
-var ingredientList = document.getElementsByClassName("ingredients")[0].getElementsByClassName("ingredient-input");
-var coupon = document.getElementById("coupon");
-var button = document.getElementById("calculate");
-var price = document.getElementById("price");
+var burgerName = document.getElementById('hamburgerName');
+var ingredientList = document.getElementsByClassName('ingredients')[0].getElementsByClassName('ingredient-input');
+var coupon = document.getElementById('coupon');
+var button = document.getElementById('calculate');
+var price = document.getElementById('price');
 
 // quando submit viene attivato
 button.addEventListener('click', function(e) {
@@ -34,7 +34,7 @@ button.addEventListener('click', function(e) {
             }
 
             // controlla se coupon è presente
-            if (coupon.value !== "") {
+            if (coupon.value !== '') {
                 var check = false; // flag per avviso coupon non valido
                 
                 // controlla se coupon è valido (in lista)
@@ -47,7 +47,7 @@ button.addEventListener('click', function(e) {
 
                 // se coupon non è valido
                 if (!check) {
-                    alert("coupon non valido")
+                    alert('Coupon non valido')
                 }
             } 
 
@@ -56,12 +56,11 @@ button.addEventListener('click', function(e) {
 
         // se almeno due ingredienti non sono selezionati
         } else {
-            alert("Scegli almeno due ingredienti")
+            alert('Scegli almeno due ingredienti')
         }
         
-    
     // se nome hamburger non corretto
     } else {
-        alert("Nome hamburger non valido")
+        alert('Nome hamburger non valido')
     }
 })
