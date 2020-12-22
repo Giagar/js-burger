@@ -8,62 +8,65 @@
 </head>
 <body>
 
-    <header>
-        <h1>Create Your Burger</h1>
-    </header>
-
-    <main>
-        <!-- form -->
-        <form action="#">
-
-            <!-- input nome hamburger: solo lettere, required, no label, placeholder -->
-            <input type="text" name="hamburgerName" id="hamburgerName" placeholder="Name Your Hamburger">
-            <!-- /input nome hamburger -->
-
-            <h2>Ingredients</h2>
-
-            <!-- gruppo input ingredienti: almeno 2 required-->
-            <div class="ingredients">
-                <div class="ingredient-container">
-                    <label for="cheese">
-                        <img src="#" alt="#">
-                        <span class="ingredient-name">Cheese</span>
-                        <input type="checkbox" class="ingredient-input" name="ingredient" id="cheese" value="14">
-                        <div class="custom-checkbox"></div>
-                        <span class="ingredient-add">add</span>
-                    </label>
+    <div class="wrapper">
+        <header>
+            <h1>Create Your Burger</h1>
+            <img src="./img/burger-top.png" alt="#">
+        </header>
+    
+        <main>
+            <!-- form -->
+            <form action="#">
+    
+                <!-- input nome hamburger: solo lettere, required, no label, placeholder -->
+                <input type="text" name="hamburgerName" id="hamburgerName" placeholder="Name Your Hamburger">
+                <!-- /input nome hamburger -->
+    
+                <h2>Ingredients</h2>
+    
+                <!-- gruppo input ingredienti: almeno 2 required-->
+                <div class="ingredients">
+                    <div class="ingredient-container">
+                        <label for="cheese">
+                            <img src="#" alt="#">
+                            <span class="ingredient-name">Cheese</span>
+                            <input type="checkbox" class="ingredient-input" name="ingredient" id="cheese" value="14">
+                            <div class="custom-checkbox"></div>
+                            <span class="ingredient-add">add</span>
+                        </label>
+                    </div>
+                    <div class="ingredient-container">
+                        <label for="egg">
+                            <img src="#" alt="#">
+                            <span class="ingredient-name">Egg</span>
+                            <input type="checkbox" class="ingredient-input" name="ingredient" id="egg" value="19">
+                            <div class="custom-checkbox"></div>
+                            <span class="ingredient-add">add</span>
+                        </label>
+                    </div>
                 </div>
-                <div class="ingredient-container">
-                    <label for="egg">
-                        <img src="#" alt="#">
-                        <span class="ingredient-name">Egg</span>
-                        <input type="checkbox" class="ingredient-input" name="ingredient" id="egg" value="19">
-                        <div class="custom-checkbox"></div>
-                        <span class="ingredient-add">add</span>
-                    </label>
-                </div>
-            </div>
-            <!-- /gruppo input ingredienti-->
-
-            <!-- discount -->
-            <label for="Coupon">Discount Coupon</label>
-            <input type="text" name="coupon" id="coupon">
-            <!-- /discount -->
-
-            <!-- button: reset valore iniziale ad ogni click, check hamburgerName, check ingredients, check discount -->
-            <input type="submit" id="calculate" value="calculate">
-            <!-- /button -->
-        </form>
-        <!-- /form -->
-
-    </main>
-
-    <footer>
-        <!-- prezzo finale -->
-        <h2>Your Price</h2>
-        <div class="price-container">$ <span id="price"></span></div>
-        <!-- /prezzo finale -->
-    </footer>
+                <!-- /gruppo input ingredienti-->
+    
+                <!-- discount -->
+                <label for="Coupon">Discount Coupon</label>
+                <input type="text" name="coupon" id="coupon">
+                <!-- /discount -->
+    
+                <!-- button: reset valore iniziale ad ogni click, check hamburgerName, check ingredients, check discount -->
+                <input type="submit" id="calculate" value="calculate">
+                <!-- /button -->
+            </form>
+            <!-- /form -->
+    
+        </main>
+    
+        <footer>
+            <!-- prezzo finale -->
+            <h2>Your Price</h2>
+            <div class="price-container">$ <span id="price"></span></div>
+            <!-- /prezzo finale -->
+        </footer>
+    </div>
     
     <script src="./js/script.js"></script>
 </body>

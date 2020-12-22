@@ -1,3 +1,75 @@
 /* h = 100vh
 w = 50%
 vai di flex */
+
+/* COMMON RULES & UTILITY CLASS */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {box-sizing: border-box; margin: 0; padding: 0;}
+
+/* ?ho preferito così perché non mi sembrava necessario aggiungere un container all'html (nn ci sono colori diversi o altro)? */
+header, main, footer { 
+    padding: 0 40px;
+}
+
+
+/* STYLE */
+/* wrapper */
+.wrapper {
+    height: 100vh;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    background-color: #FBBB51;
+    height: 120px;
+    position: relative;
+    /* text-align: right; */
+}
+
+header h1 {
+    display: inline-block;
+    width: calc(100% - 190px - 10px);
+    vertical-align: super;
+    text-align: left;
+    font-weight: 600;
+}
+
+header img {
+    vertical-align: middle;
+    transform: translate(90px, -20px);
+    width: 190px;
+}
+
+
+
+
+
+
+
+
+
+
+[type="checkbox"] {
+    /* visibility: hidden; */
+    width: 10px;
+    height: 10px;
+}
+
+.custom-checkbox {
+    width: 10px;
+    height: 10px;
+    border: 1px solid lightgrey;
+    display: inline-block;
+    position: relative;
+    background-color: green;
+}
+
+
+[type="checkbox"]:checked .custom-checkbox {
+    background-color: blue !important;
+}
