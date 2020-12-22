@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mc Boolean</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -26,29 +27,32 @@
     
                 <!-- gruppo input ingredienti: almeno 2 required-->
                 <div class="ingredients">
-                    <div class="ingredient-container">
-                        <label for="cheese">
-                            <img src="#" alt="#">
-                            <span class="ingredient-name">Cheese</span>
-                            <input type="checkbox" class="ingredient-input" name="ingredient" id="cheese" value="14">
-                            <div class="custom-checkbox"></div>
-                            <span class="ingredient-add">add</span>
-                        </label>
-                    </div>
-                    <div class="ingredient-container">
-                        <label for="egg">
-                            <img src="#" alt="#">
-                            <span class="ingredient-name">Egg</span>
-                            <input type="checkbox" class="ingredient-input" name="ingredient" id="egg" value="19">
-                            <div class="custom-checkbox"></div>
-                            <span class="ingredient-add">add</span>
-                        </label>
-                    </div>
+                    
+                    <label for="cheese" class="ingredient-container">
+                        <img src="#" alt="#">
+                        <span class="ingredient-name">Cheese</span>
+                        <input type="checkbox" class="ingredient-input" name="ingredient" id="cheese" value="14">
+                        <div class="custom-checkbox">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span class="ingredient-add">add</span>
+                    </label>
+                    
+                    <label for="egg" class="ingredient-container">
+                        <img src="#" alt="#">
+                        <span class="ingredient-name">Egg</span>
+                        <input type="checkbox" class="ingredient-input" name="ingredient" id="egg" value="19">
+                        <div class="custom-checkbox">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span class="ingredient-add">add</span>
+                    </label>
+                    
                 </div>
                 <!-- /gruppo input ingredienti-->
     
                 <!-- discount -->
-                <label for="Coupon">Discount Coupon</label>
+                <label for="coupon">Discount Coupon</label>
                 <input type="text" name="coupon" id="coupon">
                 <!-- /discount -->
     

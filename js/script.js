@@ -19,9 +19,12 @@ var coupon = document.getElementById('coupon');
 var button = document.getElementById('calculate');
 var price = document.getElementById('price');
 
+// prezzo di partenza hamburger
+price.innerText = burgerBaseCost;
+
 // quando submit viene attivato
 button.addEventListener('click', function(e) {
-    // e.preventDefault();
+    e.preventDefault();
 
     // raccogli value di name e controlla che ci siano solo lettere (e che quindi non sia vuoto)
     if (/[a-z]/ig.test(burgerName.value)) {
