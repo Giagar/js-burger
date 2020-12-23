@@ -77,7 +77,7 @@ header img {
 main {
     background-color: white;
     height: calc(100vh - 120px - 100px);
-    min-height: 450px;
+    min-height: 425px;
 }
 
 main input#hamburgerName {
@@ -86,7 +86,7 @@ main input#hamburgerName {
     width: 350px;
     border: none;
     border-radius: 4px; /* solo quando active o focus */
-    /* ?modo per far adattare input.width al contenuto? */
+    /* ?modo per far adattare input.width al contenuto? -> nn c'è, al max tramite qlche workaround js */
 }
 
 main h2 {
@@ -105,7 +105,7 @@ main form .ingredients-left, main form .ingredients-right {
     width: 50%;
 }
 
-/* era meglio inscatolarle in un contenitore html piuttosto che passarle da inline a block? */
+/* era meglio inscatolarle in un contenitore html piuttosto che passarle da inline a block? -> sì, ma come regola generale, non tanto per questo progetto limitato */
 main form label {
     display: block;
 }
@@ -138,14 +138,14 @@ main form .ingredient-name {
     display: inline-block;
     position: relative;
     background-color:#D13651;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .custom-checkbox i {
     display: none;
     font-weight: normal;
-    transform: scale(1.4) translateY(-1px);
-    /* ?nn riesco a modificare font-weight? */
+    transform: scale(1.4) translateY(-5px);
+    /* ?nn riesco a modificare font-weight? -> perché nn hai usato codice font di font awesome */
 }
 
 /* ?usando l'attr come selettore nn funzionava? */
