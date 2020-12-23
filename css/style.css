@@ -8,6 +8,10 @@ html {
     font-size: 16px;
 }
 
+body {
+    background-color: #FFF5E2;
+}
+
 * {
     box-sizing: border-box; 
     margin: 0; 
@@ -22,6 +26,18 @@ header, main, footer {
 input[type="text"]:focus, input[type="text"]:active {
     outline: none;
     background-color: lightblue !important;
+}
+
+.float-left { 
+    float: left; 
+}
+
+.float-right { 
+    float: right; 
+}
+
+.clearfix::after { 
+    clear: both; 
 }
 
 
@@ -56,7 +72,12 @@ header img {
 }
 
 /* main */
-input#hamburgerName {
+main {
+    background-color: white;
+    height: calc(100vh - 120px - 100px);
+}
+
+main input#hamburgerName {
     font-size: 1.3rem;
     margin-top: 30px;
     width: 350px;
@@ -134,4 +155,35 @@ main form input#coupon {
     line-height: 24px;
     padding-left: 10px;
 }
+
+main .button-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+main .button-container #calculate {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 19px;
+    border-radius: 4px;
+    border: none;
+    background-color: #FBBB51;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* footer */
+footer {
+    height: 100px;
+    line-height: 100px;
+    background-color: #D13659;
+    color: white;
+    font-size: 14px;
+}
+
+footer .price-container {
+    font-size: 28px;
+}
+
+
 

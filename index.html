@@ -57,17 +57,19 @@
                 <!-- /discount -->
     
                 <!-- button: reset valore iniziale ad ogni click, check hamburgerName, check ingredients, check discount -->
-                <input type="submit" id="calculate" value="calculate">
+                <div class="button-container">
+                    <input type="submit" id="calculate" value="calculate">
+                </div>
                 <!-- /button -->
             </form>
             <!-- /form -->
     
         </main>
     
-        <footer>
+        <footer class="clearfix">
             <!-- prezzo finale -->
-            <h2>Your Price</h2>
-            <div class="price-container">$ <span id="price"></span></div>
+            <h2 class="float-left">Your Price</h2>
+            <div class="price-container float-right">$ <span id="price"></span></div>
             <!-- /prezzo finale -->
         </footer>
     </div>
